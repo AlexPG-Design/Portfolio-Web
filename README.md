@@ -19,7 +19,7 @@ Este sitio presenta una selección de proyectos, habilidades y recursos visuales
 ## 🌐 Visualización
 
 Puedes ver el sitio en:  
-https://alexpg.github.io/portfolio-web
+https://alexpg-design.github.io/Portfolio-Web/
 
 ## ⚠️ Aviso de uso
 
