@@ -8,14 +8,12 @@ Este sitio presenta una selección de proyectos, habilidades y recursos visuales
 
 - `index.html`: Página principal con navegación modular.
 - `style.css`: Estilos visuales responsivos y adaptables.
-- `script.js`: Interactividad con componentes JS (cards, formularios, etc.).
 - `assets/`: Imágenes, íconos y recursos gráficos.
 
 ## 🛠 Tecnologías utilizadas
 
 - HTML5 semántico
 - CSS3 (Flexbox, Grid, variables)
-- JavaScript (DOM, eventos, modularidad)
 - GitHub Pages para publicación
 
 ## 🌐 Visualización
