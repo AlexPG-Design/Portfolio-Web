@@ -245,117 +245,6 @@ main {
 /* -----------------------------------------------------------------------------------------------------------------------------*/
 
 
-/* TRABAJOS */
-
-.proyectos{
-  padding: 32px;
-}
-
-/* CARDS */
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: end;
-}
-
-.card {
-  position: relative;
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  cursor: pointer;
-  transition: transform .3s, box-shadow .3s;
-}
-
-.card:not(.is-open):hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-/* CARD FRONTAL */
-
-.card-frontal img {
-  width: 100%;
-  display: block;
-}
-
-.card-frontal figcaption {
-  padding: .75rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* CARD TRASERA */
-
-.card-trasera {
-  position: absolute;
-  bottom: 0;
-  left: 0; right: 0;
-  max-height: 0;
-  padding: 0 1rem;
-  overflow: hidden;
-  background: #f8f8f8;
-  transition: max-height .4s ease, padding .4s ease;
-}
-
-.card.is-open .card-trasera {
-  max-height: 200px;
-  padding: 1rem;
-}
-
-/* CARD ABIERTA */
-
-.card-trasera .boton-preview {
-  display: inline-block;
-  margin-top: .5rem;
-  padding: .5rem 1rem;
-  background: #007acc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color .3s ease;
-}
-
-.card-trasera .boton-preview:hover {
-  background-color: #005fa3;
-}
-
-
-/* -----------------------------------------------------------------------------------------------------------------------------*/
-
-
-/* CAJA BLANCA FORMULARIO */
-
-.caja-blanca{
-
-  max-width: 900px;     
-  margin: 40px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  overflow: hidden;  
-  display: flex; 
-}
-
-/* CAJA IZQUIERDA IMAGENES FORMULARIO */
-
-.caja-imagen {
-
-      flex: 1;
-      background: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      text-align: center;
-      margin-left: 40px;
-}
-
 /* CAJA DERECHA IMAGENES FORMULARIO */
 
 .caja-derecha{
@@ -367,17 +256,6 @@ main {
   padding: 20px;
   background: #fff;
 
-}
-
-.caja-imagen,
-.caja-derecha {
-  width: 50%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  box-sizing: border-box;
 }
 
 /* FORMULARIO */
@@ -492,6 +370,71 @@ form button:hover {
 
 .proteccion-footer a:hover {
   color: #4db5ff;
+}
+
+
+/* ============================
+   AJUSTES FINALES SOBRE MÍ
+   ============================ */
+
+.caja-blanca-sobre-mi {
+  max-width: 900px; /* igual que formulario */
+  width: 100%;
+}
+
+.caja-imagen-sobre-mi {
+  background-color: #e6f7f5; /* mantiene tu color original */
+  margin-left: 0 !important; /* evita heredar margen del formulario */
+}
+
+
+/* ============================
+   AJUSTES FINALES FORMULARIO
+   ============================ */
+
+.caja-blanca-formulario {
+  max-width: 900px;
+  width: 100%;
+}
+
+.caja-imagen-formulario {
+  background: #fff;
+  margin-left: 40px; /* mantiene tu diseño original */
+}
+
+
+/* ============================
+   ESPACIO ENTRE SECCIONES
+   ============================ */
+
+.sobre-mi,
+.formulario-section {
+  padding: 40px 20px; /* antes 60px → más compacto */
+}
+
+
+/* Igualar ancho de ambas cajas */
+.caja-blanca-sobre-mi,
+.caja-blanca-formulario {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Igualar proporción interna de columnas en SOBRE MÍ */
+.caja-imagen-sobre-mi,
+.caja-texto {
+  flex: 1;
+}
+
+/* Padding interno de la imagen en SOBRE MÍ */
+.caja-imagen-sobre-mi {
+  padding: 40px;
+}
+
+/* Espacio entre las dos secciones (dos cajas separadas) */
+.sobre-mi,
+.formulario-section {
+  padding: 40px 20px;
 }
 
 
